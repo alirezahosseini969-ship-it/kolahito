@@ -8,164 +8,213 @@
 
 <style>
 *{
-    box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
-    margin:0;
-    font-family:Tahoma,Arial,sans-serif;
-    background:#f4f4f4;
-    color:#222;
+  margin:0;
+  font-family:Tahoma,Arial,sans-serif;
+  background:#f4f4f4;
+  color:#222;
 }
 
 header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:25px 15px;
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
 }
 
 header h1{
-    margin:0;
-    font-size:32px;
+  margin:0;
+  font-size:34px;
 }
 
 header p{
-    color:#ddd;
-    margin:10px 0 0;
+  color:#ddd;
+  margin:10px 0 0;
 }
 
 nav{
-    background:white;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:10;
-    box-shadow:0 2px 10px #ddd;
+  background:white;
+  padding:15px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 10px #ddd;
 }
 
 nav a{
-    color:#222;
-    text-decoration:none;
-    margin:0 10px;
-    font-weight:bold;
+  color:#222;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#168de2;
 }
 
 .hero{
-    background:linear-gradient(135deg,#111,#555);
-    color:white;
-    text-align:center;
-    padding:65px 20px;
+  background:linear-gradient(135deg,#111,#555);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
 }
 
 .hero h2{
-    font-size:34px;
-    margin:0 0 15px;
+  font-size:35px;
+  margin:0 0 15px;
 }
 
 .hero p{
-    font-size:18px;
+  font-size:18px;
 }
 
 .products{
-    max-width:1100px;
-    margin:40px auto;
-    padding:0 15px;
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 15px;
 }
 
 .products h2{
-    text-align:center;
-    font-size:28px;
+  text-align:center;
+  font-size:28px;
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:25px;
-    margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+  margin-top:30px;
 }
 
 .card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    text-align:center;
-    box-shadow:0 5px 20px #ddd;
-    transition:0.3s;
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  text-align:center;
+  box-shadow:0 5px 20px #ddd;
+  transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+  transform:translateY(-5px);
 }
 
 .product-image{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    background:#eee;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  background:#eee;
 }
 
 .card-content{
-    padding:20px;
+  padding:20px;
 }
 
 .card h3{
-    font-size:21px;
-    margin:5px 0 10px;
+  font-size:20px;
+  margin:5px 0 10px;
 }
 
 .card p{
-    color:#666;
+  color:#666;
 }
 
 .price{
-    font-size:20px;
-    font-weight:bold;
-    margin:18px 0;
+  font-size:20px;
+  font-weight:bold;
+  margin:18px 0;
 }
 
 button{
-    border:0;
-    background:#111;
-    color:white;
-    padding:13px 25px;
-    border-radius:9px;
-    cursor:pointer;
-    font-size:16px;
+  border:0;
+  background:#111;
+  color:white;
+  padding:13px 25px;
+  border-radius:9px;
+  cursor:pointer;
+  font-size:16px;
 }
 
 button:hover{
-    background:#333;
+  background:#333;
 }
 
-.about{
-    background:white;
-    text-align:center;
-    padding:50px 20px;
-    margin-top:40px;
+/* سفارش عمده */
+
+.wholesale{
+  max-width:1000px;
+  margin:50px auto;
+  padding:45px 25px;
+  background:linear-gradient(135deg,#111,#292929);
+  color:white;
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 8px 25px #ccc;
 }
 
-.contact{
-    text-align:center;
-    padding:50px 20px;
+.wholesale h2{
+  font-size:29px;
+  margin-top:0;
+}
+
+.wholesale p{
+  line-height:2.2;
+  font-size:17px;
+  color:#eee;
+}
+
+.wholesale strong{
+  color:#fff;
+  font-size:18px;
 }
 
 .telegram{
-    display:inline-block;
-    background:#168de2;
-    color:white;
-    text-decoration:none;
-    padding:13px 25px;
-    border-radius:9px;
-    font-weight:bold;
+  display:inline-block;
+  background:#168de2;
+  color:white;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:10px;
+  font-weight:bold;
+  margin-top:15px;
+}
+
+.telegram:hover{
+  background:#0d78c4;
+}
+
+.about{
+  background:white;
+  text-align:center;
+  padding:50px 20px;
+  margin-top:40px;
+}
+
+.about p{
+  max-width:800px;
+  margin:auto;
+  line-height:2;
+  color:#555;
+}
+
+.contact{
+  text-align:center;
+  padding:50px 20px;
 }
 
 footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:25px;
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:25px;
 }
 </style>
 </head>
@@ -173,125 +222,167 @@ footer{
 <body>
 
 <header>
-    <h1>🎩 کلاهیتو</h1>
-    <p>فروشگاه آنلاین انواع کلاه</p>
+  <h1>🧢 کلاهیتو</h1>
+  <p>فروشگاه آنلاین انواع کلاه</p>
 </header>
 
 <nav>
-    <a href="#home">خانه</a>
-    <a href="#products">محصولات</a>
-    <a href="#about">درباره ما</a>
-    <a href="#contact">تماس با ما</a>
+  <a href="#home">خانه</a>
+  <a href="#products">محصولات</a>
+  <a href="#wholesale">سفارش عمده</a>
+  <a href="#about">درباره ما</a>
+  <a href="#contact">تماس با ما</a>
 </nav>
 
 <section class="hero" id="home">
-    <h2>به کلاهیتو خوش آمدید 🧢</h2>
-    <p>کلاه مناسب برای هر سلیقه و هر استایل</p>
+  <h2>به کلاهیتو خوش آمدید 🧢</h2>
+  <p>کلاه مناسب برای هر سلیقه و هر استایل</p>
 </section>
+
 
 <section class="products" id="products">
 
-    <h2>🧢 محصولات کلاهیتو</h2>
+  <h2>🧢 محصولات کلاهیتو</h2>
 
-    <div class="grid">
+  <div class="grid">
 
-        <div class="card">
-            <img class="product-image"
-            src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=700&q=80"
-            alt="کلاه اسپرت">
-
-            <div class="card-content">
-                <h3>کلاه اسپرت</h3>
-                <p>مناسب استفاده روزمره</p>
-                <div class="price">قیمت: ۳۵۰,۰۰۰ تومان</div>
-                <button onclick="order('کلاه اسپرت')">
-                    🛒 سفارش
-                </button>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img class="product-image"
-            src="https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&w=700&q=80"
-            alt="کلاه کلاسیک">
-
-            <div class="card-content">
-                <h3>کلاه کلاسیک</h3>
-                <p>مناسب استایل رسمی و خاص</p>
-                <div class="price">قیمت: ۵۵۰,۰۰۰ تومان</div>
-                <button onclick="order('کلاه کلاسیک')">
-                    🛒 سفارش
-                </button>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img class="product-image"
-            src="https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?auto=format&fit=crop&w=700&q=80"
-            alt="کلاه تابستانی">
-
-            <div class="card-content">
-                <h3>کلاه تابستانی</h3>
-                <p>سبک و مناسب روزهای گرم</p>
-                <div class="price">قیمت: ۴۵۰,۰۰۰ تومان</div>
-                <button onclick="order('کلاه تابستانی')">
-                    🛒 سفارش
-                </button>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img class="product-image"
-            src="https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&w=700&q=80"
-            alt="کلاه جوان پسند">
-
-            <div class="card-content">
-                <h3>کلاه جوان‌پسند</h3>
-                <p>مناسب استایل روزمره</p>
-                <div class="price">قیمت: ۴۰۰,۰۰۰ تومان</div>
-                <button onclick="order('کلاه جوان پسند')">
-                    🛒 سفارش
-                </button>
-            </div>
-        </div>
-
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80"
+        alt="کلاه مشکی ساده">
+      <div class="card-content">
+        <h3>کلاه مشکی ساده</h3>
+        <p>ساده و مناسب استفاده روزمره</p>
+        <div class="price">۱۳۰,۰۰۰ تومان</div>
+        <button onclick="order('کلاه مشکی ساده')">
+          🛒 سفارش
+        </button>
+      </div>
     </div>
+
+
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80"
+        alt="کلاه مشکی نایک">
+      <div class="card-content">
+        <h3>کلاه مشکی نایک</h3>
+        <p>طراحی اسپرت و جذاب</p>
+        <div class="price">۱۵۰,۰۰۰ تومان</div>
+        <button onclick="order('کلاه مشکی نایک')">
+          🛒 سفارش
+        </button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&w=800&q=80"
+        alt="کلاه سبز تیره">
+      <div class="card-content">
+        <h3>کلاه سبز تیره ساده</h3>
+        <p>رنگ خاص و مناسب استایل روزمره</p>
+        <div class="price">۱۳۰,۰۰۰ تومان</div>
+        <button onclick="order('کلاه سبز تیره ساده')">
+          🛒 سفارش
+        </button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img
+        class="product-image"
+        src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325?auto=format&fit=crop&w=800&q=80"
+        alt="کلاه کرمی نایک">
+      <div class="card-content">
+        <h3>کلاه کرمی نایک</h3>
+        <p>رنگ کرمی با طراحی اسپرت</p>
+        <div class="price">۱۵۰,۰۰۰ تومان</div>
+        <button onclick="order('کلاه کرمی نایک')">
+          🛒 سفارش
+        </button>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+
+<!-- سفارش عمده -->
+
+<section class="wholesale" id="wholesale">
+
+  <h2>🛍️ سفارش عمده کلاهیتو</h2>
+
+  <p>
+    برای فروشگاه‌ها و همکاران عزیز، امکان ثبت سفارش‌های عمده فراهم است.
+  </p>
+
+  <p>
+    با خرید عمده، محصولات را با قیمت مناسب و رقابتی دریافت کنید.
+  </p>
+
+  <p>
+    برای اطلاع از قیمت عمده، موجودی و مدل‌های قابل سفارش،
+    از طریق کانال تلگرام با ما در ارتباط باشید.
+  </p>
+
+  <p>
+    <strong>
+      کلاهیتو؛ انتخابی مناسب برای خرید تکی و عمده 🧢
+    </strong>
+  </p>
+
+  <a
+    class="telegram"
+    href="https://t.me/kolahito"
+    target="_blank">
+    💬 مشاهده کانال تلگرام
+  </a>
+
+</section>
+
 
 <section class="about" id="about">
 
-    <h2>درباره کلاهیتو</h2>
+  <h2>درباره کلاهیتو</h2>
 
-    <p>
-        کلاهیتو یک فروشگاه آنلاین برای ارائه انواع کلاه
-        با طراحی‌های متنوع و مناسب سلیقه‌های مختلف است.
-    </p>
+  <p>
+    کلاهیتو یک فروشگاه آنلاین برای ارائه انواع کلاه
+    با طراحی‌های متنوع و قیمت مناسب است.
+    هدف ما ارائه محصولات باکیفیت برای استفاده روزمره،
+    استایل اسپرت و خرید عمده است.
+  </p>
 
 </section>
+
 
 <section class="contact" id="contact">
 
-    <h2>📞 تماس با کلاهیتو</h2>
+  <h2>📞 تماس با کلاهیتو</h2>
 
-    <p>
-        برای سفارش و دریافت اطلاعات بیشتر با ما در ارتباط باشید.
-    </p>
+  <p>
+    برای مشاهده مدل‌ها، اطلاع از موجودی و سفارش،
+    از طریق کانال تلگرام با ما در ارتباط باشید.
+  </p>
 
-    <a class="telegram"
-       href="https://t.me/Seyedalirezahosseinii"
-       target="_blank">
-       💬 سفارش در تلگرام
-    </a>
+  <a
+    class="telegram"
+    href="https://t.me/kolahito"
+    target="_blank">
+    💬 ورود به کانال کلاهیتو
+  </a>
 
 </section>
 
+
 <footer>
-
-    © 2026 کلاهیتو - همه حقوق محفوظ است
-
+  © 2026 کلاهیتو - همه حقوق محفوظ است
 </footer>
 
 
@@ -299,13 +390,10 @@ footer{
 
 function order(product){
 
-    window.open(
-        "https://t.me/Seyedalirezahosseinii?text=" +
-        encodeURIComponent(
-            "سلام، برای خرید " + product + " پیام می‌دهم."
-        ),
-        "_blank"
-    );
+  window.open(
+    "https://t.me/kolahito",
+    "_blank"
+  );
 
 }
 
