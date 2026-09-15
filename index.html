@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>کلاهیتو | فروشگاه کلاه</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f5f5f5;
+    color:#222;
+}
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+header h1{margin:0;font-size:30px}
+header p{margin:8px 0 0;color:#ddd}
+
+nav{
+    background:white;
+    padding:12px;
+    text-align:center;
+    box-shadow:0 2px 8px #ddd;
+}
+nav a{
+    color:#222;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(135deg,#111,#444);
+    color:white;
+    text-align:center;
+    padding:55px 20px;
+}
+.hero h2{font-size:32px;margin:0 0 15px}
+.hero p{font-size:18px}
+
+.products{
+    max-width:1100px;
+    margin:35px auto;
+    padding:0 15px;
+}
+.products h2{text-align:center}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 15px #ddd;
+}
+.hat{
+    font-size:80px;
+    margin:10px;
+}
+.card h3{margin:10px 0}
+.price{
+    font-size:20px;
+    font-weight:bold;
+    margin:12px;
+}
+button{
+    border:0;
+    background:#111;
+    color:white;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+}
+button:hover{background:#333}
+
+.about{
+    background:white;
+    margin-top:40px;
+    padding:40px 20px;
+    text-align:center;
+}
+.contact{
+    text-align:center;
+    padding:35px 20px;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎩 کلاهیتو</h1>
+    <p>فروشگاه آنلاین انواع کلاه</p>
+</header>
+
+<nav>
+    <a href="#home">خانه</a>
+    <a href="#products">محصولات</a>
+    <a href="#about">درباره ما</a>
+    <a href="#contact">تماس با ما</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>به کلاهیتو خوش آمدید</h2>
+    <p>کلاه مناسب برای هر سلیقه و هر استایل</p>
+</section>
+
+<section class="products" id="products">
+    <h2>محصولات کلاهیتو</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="hat">🧢</div>
+            <h3>کلاه اسپرت</h3>
+            <p>مناسب استفاده روزمره</p>
+            <div class="price">قیمت: تماس بگیرید</div>
+            <button onclick="order('کلاه اسپرت')">سفارش</button>
+        </div>
+
+        <div class="card">
+            <div class="hat">🎩</div>
+            <h3>کلاه کلاسیک</h3>
+            <p>برای استایل رسمی و خاص</p>
+            <div class="price">قیمت: تماس بگیرید</div>
+            <button onclick="order('کلاه کلاسیک')">سفارش</button>
+        </div>
+
+        <div class="card">
+            <div class="hat">👒</div>
+            <h3>کلاه تابستانی</h3>
+            <p>سبک و مناسب روزهای گرم</p>
+            <div class="price">قیمت: تماس بگیرید</div>
+            <button onclick="order('کلاه تابستانی')">سفارش</button>
+        </div>
+
+        <div class="card">
+            <div class="hat">🧢</div>
+            <h3>کلاه جوان‌پسند</h3>
+            <p>مناسب استایل روزمره</p>
+            <div class="price">قیمت: تماس بگیرید</div>
+            <button onclick="order('کلاه جوان پسند')">سفارش</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>درباره کلاهیتو</h2>
+    <p>
+        کلاهیتو یک فروشگاه آنلاین برای ارائه انواع کلاه با طراحی‌های متنوع است.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>تماس با ما</h2>
+    <p>برای سفارش و دریافت اطلاعات بیشتر با ما در ارتباط باشید.</p>
+    <button onclick="contact()">تماس با کلاهیتو</button>
+</section>
+
+<footer>
+    © 2026 کلاهیتو - همه حقوق محفوظ است
+</footer>
+
+<script>
+function order(product){
+    alert("انتخاب شما: " + product + "\\nبرای ثبت سفارش با ما تماس بگیرید.");
+}
+
+function contact(){
+    alert("برای سفارش، اطلاعات تماس فروشگاه را بعداً اینجا قرار می‌دهیم.");
+}
+</script>
+
+</body>
+  </html>
